@@ -5,10 +5,14 @@
     <title></title>
   </head>
   <body>
+    <article>
+
+    </article>
     <input type="button" value="fetch" onclick="
-      fetch('css').then(funcion(response){
+      fetch('HTML').then(funcion(response){
         response.text().then(funcion(text){
           alert(text);
+          document.querySelector('articl').innerHTML=text;
         })
       })
     ">
